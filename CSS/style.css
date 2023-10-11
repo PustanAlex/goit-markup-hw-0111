@@ -810,6 +810,7 @@ footer .studio-word {
       .modal-content h2 {
         font-size: 20px ;
         line-height: 23.44px;
+        margin-top: 40px;
       }
 
       .close-btn {
@@ -958,5 +959,8 @@ footer .studio-word {
         color: #fff;
         margin-top: 30px;
         margin-bottom: 40px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        box-shadow: 0px 4px 4px 0px #00000026;
       }
 
