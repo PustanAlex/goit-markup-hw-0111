@@ -577,6 +577,7 @@ footer .studio-word {
 
     .relative-images {
         position: relative;
+        height: 294px;
        }
     
        .fixed-descriptions {
@@ -907,8 +908,8 @@ footer .studio-word {
         cursor: pointer;
       } 
 
-      .checkbox-input:checked svg {
-        visibility: none;
+      input:checked + svg {
+        display: none;
       }
 
       .form-section {
