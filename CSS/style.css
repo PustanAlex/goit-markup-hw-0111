@@ -1,3 +1,5 @@
+
+
 :root {
     --main-color: #212121;
     --body-font-family: 'Roboto', sans-serif;
@@ -212,6 +214,12 @@ main h1 {
 .our-team h4 {
  margin-top: 30px;
 }
+
+.our-team-photos ul {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .our-team li {
     display: flex;
@@ -532,47 +540,24 @@ footer .studio-word {
 
     .web-main-explanations ul{
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 30px;
-        
+        flex-direction: column;
+        row-gap: 30px;
     }
 
     .web-svgs {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 270px;
         height: 120px;
         margin-bottom: 30px;
         background-color: #F5F4FA;
     }
 
-    .web-main-explanations li {
-        width: 270px;
-        height: 75px;
-        letter-spacing: 3%;
-        line-height: 24px;
-    }
+    
 
-    .web-main-explanations {
-        display: flex;
-        justify-content: center;
-        height: 101px;
-        width: 1200px;
-    }
 
     .what-we-do-section {
-
-
-    }
-
-    .what-we-do {
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        gap: 30px;
-        margin-top: 50px;
+        display: none;
     }
 
     .relative-images {
@@ -965,3 +950,61 @@ footer .studio-word {
         box-shadow: 0px 4px 4px 0px #00000026;
       }
 
+      /* Tablet */
+
+      @media screen and ( min-width: 768px ) {
+
+      }
+
+      @media screen and ( min-width: 1158px ) {
+
+        .web-main-explanations ul {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        .web-main-explanations li {
+            width: 270px;
+            height: 75px;
+            letter-spacing: 3%;
+            line-height: 24px;
+            
+        }
+
+        .web-svgs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 270px;
+            height: 120px;
+            margin-bottom: 30px;
+            background-color: #F5F4FA;
+        }
+    
+        .web-main-explanations {
+            display: flex;
+            justify-content: center;
+            height: 101px;
+            width: 1200px;
+        }
+
+        .what-we-do-section {
+            display: block;
+        }
+
+        .what-we-do {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .our-team-photos ul {
+            display: flex;
+            flex-direction: row;
+        }
+      }
+      
