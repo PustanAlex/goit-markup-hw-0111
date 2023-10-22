@@ -1106,6 +1106,7 @@ footer .studio-word {
         gap:30px;
         margin-top: 300px;
         margin-bottom: 64px;
+        overflow: hidden;
       }
 
       .social-links-menu-modal {
