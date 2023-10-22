@@ -10,9 +10,12 @@
 }
 
 
-body {
-    margin: 0;
-}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 .section {
     padding-top: 94px;
@@ -334,6 +337,16 @@ footer p {
 .footer-address {
     color: #fff;
     opacity: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-adress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .footer-social-icons {
@@ -350,8 +363,9 @@ footer .studio-word {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    
+    gap: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-social p {
@@ -369,7 +383,6 @@ footer .studio-word {
     width: 206px;
     height: 80px;
     margin-left: 70px;
-    margin-top:-45px;
     margin-right: 93px;
 }
 
@@ -382,6 +395,10 @@ footer .studio-word {
 .newslatter-subscribe {
    display: flex;
    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   
 }
 
 .label-for-footer {
@@ -389,19 +406,25 @@ footer .studio-word {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    
 }
 
 .label-for-footer label input{
     height: 50px;
-    width: 358px;
+    width: 91%;
     background-color: rgba(33, 150, 243, 0);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: #fff;
     padding-left: 18px;
     outline: none;
+    margin-left: 15px;
 }
 
+.label-for-footer label {
+    width: 100%;
+}
 
 .newslatter-subscribe p {
     text-transform: uppercase;
@@ -423,6 +446,7 @@ footer .studio-word {
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-left: 12px;
+    margin-top: 20px;
 }
 
 .newslatter-subscribe svg {
@@ -535,7 +559,9 @@ footer .studio-word {
     .main-web-section {
         display: flex;
         justify-content: center;
+        align-items: center;
         padding-bottom:94px ;
+        padding-right: 15px;
     }
 
     .web-main {
@@ -1029,6 +1055,7 @@ footer .studio-word {
             align-items: center;
             flex-direction: row;
             gap: 30px;
+            
         }
 
         .main-web-section li {
@@ -1096,6 +1123,5 @@ footer .studio-word {
             display: flex;
         }
 
-        
     }
       
