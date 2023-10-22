@@ -568,6 +568,11 @@ footer .studio-word {
         height: 40px;
     }
 
+    .svg-menu-opener:hover svg {
+        fill: #2196F3;
+        cursor: pointer;
+    }
+
     .mail-svg {
         width: 16px;
         height: 12px;
@@ -1048,6 +1053,11 @@ footer .studio-word {
       .js-close-menu svg {
         width: 40px;
         height: 40px;
+      }
+
+      .js-close-menu:hover svg {
+        fill:#2196F3;
+        cursor: pointer;
       }
 
       .js-close-menu {
