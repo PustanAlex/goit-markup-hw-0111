@@ -1033,6 +1033,7 @@ footer .studio-word {
         height: 100vh;
         right: 0;
         top: 0;
+        overflow: auto;
       }
 
       .is-open a:hover {
