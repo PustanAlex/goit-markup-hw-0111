@@ -83,17 +83,11 @@ h2 {
         /* HEADER */
 
 header .nav-contacts{ 
-    font-size: 14px;
-    font-family: var(--body-font-family);
-    font-weight: 400;
-    line-height: 18.75px;
+    display: none;
 }
 
 header .main-navigation {
-    font-size: var(--pharagraph-font-size);
-    font-family: var(--body-font-family);
-    font-weight: 500;
-    line-height: 16.41px;
+   display: none;
 }
 
 .navigation-link-current {
@@ -198,13 +192,17 @@ main h1 {
     transition: background-color var(--transition);
 }
 
+
 .our-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 18.75px;
     background-color: #F5F4FA;
     width: 100%;
-
 }
 
 .our-team p {
@@ -269,6 +267,12 @@ main h1 {
     gap: 10px
 }
 
+.customer-section {
+    display: flex;
+    justify-content: center;
+}
+
+
 .customers svg {
     width: 64px;
     height: 64px;
@@ -276,8 +280,9 @@ main h1 {
 }
 
 .customers-container {
-    display: flex;
-    gap: 30px; 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
 }
 
 .customers-svgs:hover {
@@ -320,7 +325,7 @@ footer {
     font-family: var(--body-font-family);
     font-size: var(--pharagraph-font-size);
     font-weight: var(--pharagraph-font-weight);
-    height: 251px;
+    height: 604pxpx;
 }
 footer p {
     color: #fff;
@@ -342,9 +347,11 @@ footer .studio-word {
 
 .footer-container {
     display: flex;
-    justify-content: flex-start;
-    padding-left: 215px;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap: 30px;
+    
 }
 
 .footer-social p {
@@ -358,7 +365,7 @@ footer .studio-word {
 .footer-social {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items:center;
     width: 206px;
     height: 80px;
     margin-left: 70px;
@@ -375,11 +382,13 @@ footer .studio-word {
 .newslatter-subscribe {
    display: flex;
    flex-direction: column;
-   margin-top: -30px;
 }
 
 .label-for-footer {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .label-for-footer label input{
@@ -466,43 +475,54 @@ footer .studio-word {
     .global-header {
         height: 80px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 15px;
+        margin-right: 15px;
     }
     
     .global-header-portofolio {
         height: 80px;
         display: flex;
-        border-bottom: 1px inset #ECECEC ;
-        justify-content: space-evenly;
-    }
-    
-    .menu-bar {
-        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
         align-items: center;
     }
+    
+    .menu-bar { 
+        display: none;
+    }
 
+    .mobile-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
 
-    .menu-bar .main-navigation ul {
+     .main-navigation ul {
         display: flex;
         gap: 50px;
 
     }
 
-    .menu-bar .nav-contacts ul {
+     .nav-contacts ul {
         display: flex;
         justify-content: baseline;
         align-items: baseline;
         gap: 40px;
     }
 
-
- 
-
-
     .phone-svg {
         width: 10px;
         height: 16px;
         margin-right:10px
+    }
+
+    .svg-menu-opener svg {
+        width: 40px;
+        height: 40px;
     }
 
     .mail-svg {
@@ -515,7 +535,7 @@ footer .studio-word {
     .main-web-section {
         display: flex;
         justify-content: center;
-
+        padding-bottom:94px ;
     }
 
     .web-main {
@@ -538,7 +558,7 @@ footer .studio-word {
         height: 50px;
     }
 
-    .web-main-explanations ul{
+    .main-web-section ul{
         display: flex;
         flex-direction: column;
         row-gap: 30px;
@@ -553,6 +573,12 @@ footer .studio-word {
         background-color: #F5F4FA;
     }
 
+    .web-svg-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
 
 
@@ -599,11 +625,7 @@ footer .studio-word {
         
     }
 
-    .customer-section {
-        display: flex;
-        justify-content: center;
-    }
-
+   
 
    
 
@@ -957,6 +979,50 @@ footer .studio-word {
       }
 
       @media screen and ( min-width: 1158px ) {
+        
+
+        
+        .global-header {
+            height: 80px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .global-header-portofolio {
+            height: 80px;
+            display: flex;
+            border-bottom: 1px inset #ECECEC ;
+            justify-content: space-evenly;
+        }
+
+        .mobile-navigation {
+            display: none;
+        }
+
+        .menu-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .svg-menu-opener {
+            display: none;
+        }
+
+        header .main-navigation {
+            font-size: var(--pharagraph-font-size);
+            font-family: var(--body-font-family);
+            font-weight: 500;
+            line-height: 16.41px;
+            display: block;
+        }
+
+        header .nav-contacts{ 
+            font-size: 14px;
+            font-family: var(--body-font-family);
+            font-weight: 400;
+            line-height: 18.75px;
+            display: block;
+        }
 
         .web-main-explanations ul {
             display: flex;
@@ -965,7 +1031,7 @@ footer .studio-word {
             gap: 30px;
         }
 
-        .web-main-explanations li {
+        .main-web-section li {
             width: 270px;
             height: 75px;
             letter-spacing: 3%;
@@ -982,12 +1048,19 @@ footer .studio-word {
             margin-bottom: 30px;
             background-color: #F5F4FA;
         }
+
+        .web-svg-description {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
     
         .web-main-explanations {
             display: flex;
             justify-content: center;
             height: 101px;
             width: 1200px;
+            padding-bottom: 54px;
         }
 
         .what-we-do-section {
@@ -1006,5 +1079,23 @@ footer .studio-word {
             display: flex;
             flex-direction: row;
         }
-      }
+
+        .customers-container {
+            display: flex;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 215px;
+            align-items: center;
+            height: 251px;
+        }
+
+        .label-for-footer {
+            display: flex;
+        }
+
+        
+    }
       
