@@ -10,6 +10,33 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body class="container">
+    <div class="js-menu-container is-open">
+        <button class="js-close-menu">
+            <svg>
+                <use href=".//images/icons.svg#icon-close-btn"/>
+            </svg>
+        </button>
+        <nav class="mobile-modal-navigation">
+            <div class="mobile-nav-links">
+                <a href="./index.html">Studio</a>
+                <a href="./portofolio.html" >Portofolio</a>
+                <a href="#">Contacts</a>
+            </div>
+            <div class="mobile-contact-type">
+                <a class="phone-number-modal-menu" href="tel:+1-212-772-4150">+1 212-772-4150</a>
+                <a class="mail-modal-menu" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+            <div class="social-links-menu-modal">
+                <a href="#">Instagram</a>
+                <span></span>
+                <a href="#">Twitter</a>
+                <span></span>
+                <a href="#">Facebook</a>
+                <span></span>
+                <a href="#">Linkedin</a>
+            </div>
+        </nav>
+    </div>
     <header class="global-header-portofolio">
         <div class="mobile-navigation">
             <a href="https://www.figma.com/file/TwjztGEkwMravGL9pPVt8l/Web-Studio-Homework-Project?type=design&node-id=1-293&mode=design&t=0eOfYrUTI4rjxHB8-0" target="_blank"><span class="logo"><span class="web-word">Web</span><span class="studio-word">Studio</span></span></a>
@@ -20,13 +47,13 @@
             </div>
         </div>
         <div class="menu-bar">
-            <a href="https://www.figma.com/file/TwjztGEkwMravGL9pPVt8l/Web-Studio-Homework-Project?type=design&node-id=1-293&mode=design&t=0eOfYrUTI4rjxHB8-0" target="_blank"><span class="logo"><span class="web-word">Web</span><span class="studio-word">Studio</span></a>
+            <a href="https://www.figma.com/file/TwjztGEkwMravGL9pPVt8l/Web-Studio-Homework-Project?type=design&node-id=1-293&mode=design&t=0eOfYrUTI4rjxHB8-0" target="_blank"><span class="logo"><span class="web-word">Web</span><span class="studio-word">Studio</span></span></a>
             <div class="main-navigation">
                 <nav >
                     <ul>
                         <li class="nav-item1"><a href="./index.html" class="navigation-link">Studio</a></li>
                         <li class="nav-item2"><a href="./portofolio.html" class="navigation-link-current">Portofolio</a></li>
-                        <li class="nav-item3"><a href="#" class="navigation-link">Contacts</a></li>
+                        <li class="nav-item3"><a href="#footer-container" class="navigation-link">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -206,5 +233,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+
 </body>
 </html>

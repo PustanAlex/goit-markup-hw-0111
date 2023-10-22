@@ -11,10 +11,38 @@
 </head>
 <body class="container">
     <!-- Menu Bar -->
+    <div class="js-menu-container is-open">
+        <button class="js-close-menu">
+            <svg>
+                <use href=".//images/icons.svg#icon-close-btn"/>
+            </svg>
+        </button>
+        <nav class="mobile-modal-navigation">
+            <div class="mobile-nav-links">
+                <a href="./index.html">Studio</a>
+                <a href="./portofolio.html" >Portofolio</a>
+                <a href="#">Contacts</a>
+            </div>
+            <div class="mobile-contact-type">
+                <a class="phone-number-modal-menu" href="tel:+1-212-772-4150">+1 212-772-4150</a>
+                <a class="mail-modal-menu" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+            <div class="social-links-menu-modal">
+                <a href="#">Instagram</a>
+                <span></span>
+                <a href="#">Twitter</a>
+                <span></span>
+                <a href="#">Facebook</a>
+                <span></span>
+                <a href="#">Linkedin</a>
+            </div>
+        </nav>
+    </div>
+    
     <header class="global-header">
         <div class="mobile-navigation-portofolio">
             <a href="https://www.figma.com/file/TwjztGEkwMravGL9pPVt8l/Web-Studio-Homework-Project?type=design&node-id=1-293&mode=design&t=0eOfYrUTI4rjxHB8-0" target="_blank"><span class="logo"><span class="web-word">Web</span><span class="studio-word">Studio</span></span></a>
-            <div class="svg-menu-opener">
+            <div class="svg-menu-opener js-open-menu">
                 <svg>
                     <use href="./images/icons.svg#icon-menu-hamburger" />
                 </svg>
@@ -32,7 +60,7 @@
                     <ul>
                         <li class="nav-item1"><a href="./index.html" class="navigation-link-current">Studio</a></li>
                         <li class="nav-item2"><a href="./portofolio.html" class="navigation-link">Portofolio</a></li>
-                        <li class="nav-item3"><a href="#" class="navigation-link">Contacts</a></li>
+                        <li class="nav-item3"><a href="#footer-container" class="navigation-link">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -391,6 +419,7 @@
         </div>
     </footer>
 
+    
 
     <div class="modal is-hidden" data-modal>
         <div class="modal-content">
@@ -425,7 +454,7 @@
                         </svg>
                     </div>
                 </div>
-               
+                
 
                 <div class="form-section">
                     <label class="feedback-label">
@@ -451,8 +480,11 @@
         </button>
         </div>
       </div>
+
+
   
       <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>
