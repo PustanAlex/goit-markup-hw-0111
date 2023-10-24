@@ -13,6 +13,7 @@
 .container {
     margin-left: auto;
     margin-right: auto;
+    width: 480px;
   }
 
 .section {
@@ -103,14 +104,6 @@ nav a{
     color:var(--main-color);
 }
 
-.nav-item1 {
-    padding-left: 93px; 
-}
-
-.nav-item4 {
-    padding-left: 330px;
-}
-
 
 .nav-contacts a{
     color: #757575;
@@ -173,13 +166,15 @@ nav a{
     margin-left: -25px;
 }
 
-main h1 {
-    font-style: var(--body-font-family);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
+main .main-title {
+    color: #FFF;
     text-align: center;
-    color: #fff;
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px; 
+    letter-spacing: 2.64px;
 }
 
 .main-button {
@@ -373,6 +368,7 @@ footer .studio-word {
     gap: 60px;
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 480px;
 }
 
 .footer-social p {
@@ -408,7 +404,7 @@ footer .studio-word {
    
 }
 
-.label-for-footer {
+.input-for-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -417,17 +413,15 @@ footer .studio-word {
     
 }
 
-.label-for-footer label input{
+.input-for-footer input{
     height: 50px;
     width: 450px;
     background-color: rgba(33, 150, 243, 0);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: #fff;
-    padding-left: 18px;
+    text-indent: 18px;
     outline: none;
-    margin-left: 15px;
-    margin-right: 15px;
     
 }
 
@@ -456,7 +450,6 @@ footer .studio-word {
     color: #fff;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-left: 12px;
     margin-top: 20px;
 }
 
@@ -666,7 +659,7 @@ footer .studio-word {
         display: flex;
         justify-content: center;
         gap: 30px;
-        
+        padding-left: 0px;
     }
 
     .our-team img {
@@ -846,7 +839,7 @@ footer .studio-word {
         position: relative;
         background-color: #fff;
         padding: 20px;
-        width: 528px;
+        width: 480px;
         height: 581px;
         border-radius: 4px;
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -924,7 +917,7 @@ footer .studio-word {
 
       .modal-form input {
         height: 40px;
-        width: 448px;
+        width: 370px;
         background-color: #fff;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
@@ -959,7 +952,6 @@ footer .studio-word {
         align-items: center;
         position: relative;
         gap: 8px;
-        margin-left: 12px;
         margin-top: 20px;
       }
 
@@ -1148,18 +1140,52 @@ footer .studio-word {
 
       @media screen and ( min-width: 768px ) {
 
-      }
+        .container {
+            width: 768px;
+        }
 
-      @media screen and ( min-width: 1158px ) {
-        
-        .js-menu-container {
-            display: none;
+        .is-open {display: none;
         }
         
+        .js-menu-container {display: none;
+        }
+
+
+        .mobile-navigation-portofolio {
+            display: none;
+        }
+
+        .nav-contacts ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: 114px ;
+        }
+
+        .nav-item4 {
+            display: flex;
+            height: 14px;
+        }
+        
+        . .nav-item5 {
+            display: flex;
+            height: 14px;
+        }
+
+
+        .mobile-navigation {
+            display: none;
+        }
+
+        .main-navigation {
+            display: block;
+        }
+
         .global-header {
             height: 80px;
             display: flex;
-            justify-content: space-evenly;
         }
         
         .global-header-portofolio {
@@ -1192,6 +1218,8 @@ footer .studio-word {
             font-weight: 500;
             line-height: 16.41px;
             display: block;
+            margin-left:93px;
+            /* width: 250px; */
         }
 
         header .nav-contacts{ 
@@ -1201,6 +1229,16 @@ footer .studio-word {
             line-height: 18.75px;
             display: block;
         }
+
+      }
+
+      @media screen and ( min-width: 1158px ) {
+        
+        .js-menu-container {
+            display: none;
+        }
+        
+        
 
         .web-main-explanations ul {
             display: flex;
@@ -1254,6 +1292,9 @@ footer .studio-word {
             margin-top: 50px;
         }
 
+        .our-team ul {
+            padding-left: 40px;
+        }
         .our-team li {
             width: 270px;
             height: 428px;
@@ -1303,7 +1344,7 @@ footer .studio-word {
             align-items: flex-start; 
          }
 
-         .label-for-footer label {
+         .input-for-footer label {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -1311,14 +1352,14 @@ footer .studio-word {
           
          }
 
-         .label-for-footer {
+         .input-for-footer {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
             align-items: baseline;
          }
 
-         .label-for-footer label input{
+         .input-for-footer label input{
             width: 358px;
             margin: 0;
          }
@@ -1327,6 +1368,28 @@ footer .studio-word {
         display: flex;
         align-items:flex-start;
         margin-top: -45px;
+        }
+
+        /* Modal content Desktop */
+
+        .container {
+            width: 100%;
+        }
+
+        .modal-content {
+            width: 528px;
+        }
+
+        .modal-form input {
+            width: 448px ;
+        }
+
+        .modal-form .checkbox-label {
+            margin-left: 12px;
+        }
+
+        .newslatter-subscribe button {
+            margin-left: 12px;
         }
 
         /* Portofolio */
