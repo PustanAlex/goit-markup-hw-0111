@@ -177,9 +177,11 @@ main .main-title {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
+.web-main-explanation ul {
+    padding: 0;
+}
 
 
 .main-button {
