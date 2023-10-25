@@ -13,12 +13,14 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 480px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 ul{
@@ -154,17 +156,6 @@ nav a{
 
         /* MAIN */
 
-.web-main-explanations svg {
-    width: 70px;
-    height: 70px;
-}
-
-.web-main-explanations {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -25px;
-}
 
 main .main-title {
     color: #FFF;
@@ -176,6 +167,20 @@ main .main-title {
     line-height: 60px; 
     letter-spacing: 2.64px;
 }
+
+.web-main-explanations svg {
+    width: 70px;
+    height: 70px;
+}
+
+.web-main-explanations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 
 .main-button {
     background-color: #2196F3;
@@ -212,12 +217,13 @@ main .main-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 270px;
+    width: 450px;
     height: 622px;
     background-color: #fff;
     box-shadow: 0px 2px 1px 0px #00000033;
     border-radius: 0px 0px 4px 4px;
 }
+
 
 .our-team p {
     margin-top: -10px;
@@ -230,6 +236,11 @@ main .main-title {
 .our-team-photos ul {
     display: flex;
     flex-direction: column;
+}
+
+.our-team-photos ul img {
+    width: 450px;
+    height: 460px;
 }
 
 
@@ -285,7 +296,11 @@ main .main-title {
 }
 
 .customers-container {
-    display: grid;
+    display: flex;
+    width: 450px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
 }
@@ -306,6 +321,7 @@ main .main-title {
     align-items: center;
     justify-content: center;
     width: 1200px;
+    gap: 30px;
 }
 
 .customers-svgs {
@@ -316,7 +332,6 @@ main .main-title {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 50px;
 
 }
 
@@ -368,7 +383,7 @@ footer .studio-word {
     gap: 60px;
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 480px;
+    width: 100%;
 }
 
 .footer-social p {
@@ -524,6 +539,7 @@ footer .studio-word {
         align-items: center;
         width: 100%;
         height: 60px;
+        /* padding-left: 15px; */
     }
     
     .menu-bar { 
@@ -540,7 +556,7 @@ footer .studio-word {
      .main-navigation ul {
         display: flex;
         gap: 50px;
-
+        padding: 0px;
     }
 
      .nav-contacts ul {
@@ -550,11 +566,7 @@ footer .studio-word {
         gap: 40px;
     }
 
-    .phone-svg {
-        width: 10px;
-        height: 16px;
-        margin-right:10px
-    }
+    
 
     .svg-menu-opener svg {
         width: 40px;
@@ -566,20 +578,7 @@ footer .studio-word {
         cursor: pointer;
     }
 
-    .mail-svg {
-        width: 16px;
-        height: 12px;
-        margin-right:10px
-    }
 
-
-    .main-web-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom:94px ;
-        padding-right: 15px;
-    }
 
     .web-main {
         display: flex;
@@ -601,7 +600,7 @@ footer .studio-word {
         height: 50px;
     }
 
-    .main-web-section ul{
+    .web-main-explanation ul{
         display: flex;
         flex-direction: column;
         row-gap: 30px;
@@ -615,15 +614,6 @@ footer .studio-word {
         margin-bottom: 30px;
         background-color: #F5F4FA;
     }
-
-    .web-svg-description {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-
 
     .what-we-do-section {
         display: none;
@@ -684,26 +674,30 @@ footer .studio-word {
         justify-content: center;
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 30px;
         padding: 0;
+        gap: 30px;
     }
 
     .main-div li {
-        height: 404px;
-        width: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 404;
+        width: 450px;
         background-color:#fff;
         border: 1px groove #EEEEEE;
-        margin-bottom: 30px;
+    }
+
+    .main-div li img {
+        width: 450px;
+        height: 294px;
     }
 
     .main-div li:hover {
         box-shadow: 1px 4px 6px 0px #00000029;
         cursor: pointer;
         transition: box-shadow 250ms linear;
-    }
-
-    .main-div {
-        width: 1200px;
     }
 
 
@@ -713,6 +707,8 @@ footer .studio-word {
         flex-wrap: wrap;
         padding: 0;
         row-gap:15px ;
+        justify-content: center;
+        align-items: center;
     }
 
     .portofolio {
@@ -720,7 +716,7 @@ footer .studio-word {
         display:flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         padding-top: 0px;
     }
 
@@ -767,11 +763,11 @@ footer .studio-word {
 
 
     .main-div h4 {
-        padding-top: 20px;
-        padding-left: 24px;
-        margin-top: 20px;
-        margin-bottom: 0px;
-        margin: 0px auto;
+    padding-top: 20px;
+    padding-left: 24px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    /* margin: 0px auto; */
     }
 
     .main-div p {
@@ -791,8 +787,8 @@ footer .studio-word {
     .card-description {
         position: absolute;
         display: none;
-        width: 370px;
-        height: 294px;
+        width: 450px;
+        height: 304px;
         bottom: 0;
         margin-bottom: 110px;
         overflow: hidden;
@@ -807,7 +803,7 @@ footer .studio-word {
     letter-spacing: 3%;
     text-align: left;
     width: 322px;
-    height: 140px;
+    height: 10px;
     margin-top: 63px; 
     
     }
@@ -1017,19 +1013,22 @@ footer .studio-word {
       }
 
       .js-menu-container { 
-        display: none;
-      }
-
-      .is-open {
         display: flex;
+        z-index: 1;
         flex-direction: column;
-        position: fixed;
+        position:fixed;
         background-color: #fff;
         width: 100%;
         height: 100vh;
         right: 0;
         top: 0;
-        overflow: auto;
+        overflow:hidden;
+      }
+
+      .is-open {
+        display: none;
+        
+        
       }
 
       .is-open a:hover {
@@ -1141,7 +1140,7 @@ footer .studio-word {
       @media screen and ( min-width: 768px ) {
 
         .container {
-            width: 768px;
+            width: 100%;
         }
 
         .is-open {display: none;
@@ -1155,13 +1154,19 @@ footer .studio-word {
             display: none;
         }
 
+        .global-header-portofolio {
+            border-bottom: 1px solid tomato;
+            padding-left: 215px;
+        }
+
         .nav-contacts ul {
             display: flex;
             flex-direction: column;
             gap: 10px;
             align-items: flex-start;
             justify-content: center;
-            margin-left: 114px ;
+            margin-left: 100px ;
+            padding: 0;
         }
 
         .nav-item4 {
@@ -1169,15 +1174,23 @@ footer .studio-word {
             height: 14px;
         }
         
-        . .nav-item5 {
+         .nav-item5 {
             display: flex;
             height: 14px;
         }
 
-
-        .mobile-navigation {
-            display: none;
+        .mail-svg {
+            width: 14px;
+            height: 12px;
+            margin-right:10px
         }
+
+        .phone-svg {
+            width: 10px;
+            height: 14px;
+            margin-right:10px
+        }
+
 
         .main-navigation {
             display: block;
@@ -1186,14 +1199,11 @@ footer .studio-word {
         .global-header {
             height: 80px;
             display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
         }
         
-        .global-header-portofolio {
-            height: 80px;
-            display: flex;
-            border-bottom: 1px inset #ECECEC ;
-            justify-content: space-evenly;
-        }
 
         .mobile-navigation-portofolio {
             display: none;
@@ -1206,6 +1216,7 @@ footer .studio-word {
         .menu-bar {
             display: flex;
             align-items: center;
+            justify-content: center;
         }
 
         .svg-menu-opener {
@@ -1219,7 +1230,6 @@ footer .studio-word {
             line-height: 16.41px;
             display: block;
             margin-left:93px;
-            /* width: 250px; */
         }
 
         header .nav-contacts{ 
@@ -1227,25 +1237,203 @@ footer .studio-word {
             font-family: var(--body-font-family);
             font-weight: 400;
             line-height: 18.75px;
-            display: block;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .main-web-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom:60px ;
+        }
+
+        .web-main-explanations {}
+
+        .web-svg-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+
+        .main-web-section ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-shrink: 1;
+            gap: 30px;
+            width: 738px;
+            padding-left: 0px;
+
+        }
+        
+        .our-team ul {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .web-main-explanations ul li {
+            width: 354px;
+        }
+
+        .our-team-photos ul img {
+            width: 354px;
+            height: 374px;
+        }
+
+        .our-team li{
+            display: flex;
+            width: 354px;
+        }
+
+        .customers-container {
+           display: flex;
+           flex-wrap: wrap;
+           width: 738px;
+           justify-content: center;
+           align-items: center;
+        }
+
+        .footer-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .portofolio {
+            display: flex;
+            gap: 30px;
+        }
+
+        .portofolio nav ul {
+            display: flex;
+            width: 516px;
+            margin-top: 60px;
+        }
+
+        .main-div ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            flex-direction: row;
+        }
+
+        .main-div li {
+            width : 354px
+        }
+
+        .main-div li img {
+            width: 354px;
+        }
+
+        .card-description {
+            width: 354px;
         }
 
       }
 
+        /* Desktop */
+
+      
       @media screen and ( min-width: 1158px ) {
+
+        .section {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .global-header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left:215px;
+        }
+
+        .global-header-portofolio {
+            border-bottom: 1px solid #ECECEC;
+        }
+
+
+        .menu-bar .webstudio-logo {
+            margin-left: 215px;
+        }
+
+
+        .mail-svg {
+            width: 16px;
+            height: 12px;
+            margin-right:10px
+        }
+
+        .phone-svg {
+            width: 10px;
+            height: 16px;
+            margin-right:10px
+        }
+
+        .nav-contacts ul {
+            top: 32px;
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            margin-left: 339px ;
+        }
+
+        .nav-item4 {
+            height: 16px;
+        }
+
+        .nav-item5 {
+            height: 16px;
+        }
+
+        .mail-svg {
+            width: 16px;
+            height: 12px;
+        }
+
+        .phone-svg {
+            height: 16px;
+        }
         
         .js-menu-container {
             display: none;
         }
-        
-        
 
+        .main-web-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom:94px ;
+        }
+        
         .web-main-explanations ul {
             display: flex;
             align-items: center;
             flex-direction: row;
+            flex-wrap: nowrap;
             gap: 30px;
-            
+            width: 1200px;
+        }
+
+        .web-main-explanations ul li {
+            width: 270px;
         }
 
         .main-web-section li {
@@ -1253,7 +1441,12 @@ footer .studio-word {
             height: 75px;
             letter-spacing: 3%;
             line-height: 24px;
-            
+        }
+
+        .main-web-section ul{
+            display: flex;
+            flex-direction: row;
+            row-gap: 30px;
         }
 
         .web-svgs {
@@ -1266,11 +1459,6 @@ footer .studio-word {
             background-color: #F5F4FA;
         }
 
-        .web-svg-description {
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-        }
     
         .web-main-explanations {
             display: flex;
@@ -1281,20 +1469,20 @@ footer .studio-word {
         }
 
         .what-we-do-section {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
         }
 
         .what-we-do {
             display: flex;
-            justify-content:center;
-            align-items: center;
             gap: 30px;
             margin-top: 50px;
+            width: 1200px;
         }
 
-        .our-team ul {
-            padding-left: 40px;
-        }
         .our-team li {
             width: 270px;
             height: 428px;
@@ -1305,8 +1493,20 @@ footer .studio-word {
             flex-direction: row;
         }
 
+        .our-team-photos ul img {
+            width: 270px;
+            height: 260px;
+        }
+
+        .customers {
+            gap: 50px
+        }
+
         .customers-container {
             display: flex;
+            width: 1200px;
+            justify-content: center;
+            align-items: center;
         }
 
         .footer-container {
@@ -1319,6 +1519,7 @@ footer .studio-word {
             gap: 0;
             padding-bottom: 0px;
             padding-top: 0px;
+            flex-wrap: nowrap;
         }
 
         .footer-adress-container {
@@ -1372,9 +1573,6 @@ footer .studio-word {
 
         /* Modal content Desktop */
 
-        .container {
-            width: 100%;
-        }
 
         .modal-content {
             width: 528px;
@@ -1396,8 +1594,6 @@ footer .studio-word {
 
         .portofolio {
             padding-bottom: 94px;
-            justify-content: center;
-            align-items: center;
         }
 
         .portofolio nav ul {
@@ -1412,13 +1608,28 @@ footer .studio-word {
 
         .main-div ul {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
             flex-wrap: wrap;
-            margin: 0px auto;
+            margin: 0 auto;
             flex-direction: row;
+            width: 1200px;
         }
 
+        .main-div li {
+            height: 404px;
+            width: 370px;
+        }
+
+        .main-div li img {
+            width:370px ;
+            height: 294px;
+        }
+
+        .card-description {
+            width: 370px;
+            height: 294px;
+        }
         
     }
       
